@@ -21,7 +21,67 @@
       </ul>
       </nav>
     </header>
-    <main class="main-inner"></main>
+    <main class="main-inner">
+
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" >Гостиницы</a></li>
+        </ul>
+      </header>
+    <section class="hotel-search">
+      <h2 class="visually-hidden">Поиск гостиниц с фильтрами</h2>
+      <form  class="hotel filter"  action="https://echo.htmlacademy.ru/" method="get">
+       <fieldset class="ifrastructure-filter">
+        <legend class="infrasructure-filter-group">Инфраструктура</legend>
+        <ul class="infrastructure-filter-list">
+            <li class="infrastructure-filter-item">
+              <label><input class="control-filter" type="checkbox" name="pool" checked>Бассейн
+              </label>
+            </li>
+            <li class="infrastructure-filter-item">
+              <label><input class="control-filter" type="checkbox" name="parking" checked>Парковка
+              </label>
+            </li>
+            <li class="infrastructure-filter-item">
+              <label><input class="control-filter" type="checkbox" name="wifi">Wi-Fi
+              </label>
+            </li>
+        </ul>
+      </fieldset>
+      <fieldset class="type-of-housing-filter">
+        <legend class="type-of-housing-filter-group">Тип Жилья</legend>
+          <ul class="type-of-housing-filter-list">
+              <li class="type-of-housing-filter-item">
+                <label><input class="control-filter" type="radio" name="hotel-type" value="hotel" checked>Гостинница
+                </label>
+              </li>
+              <li class="infrastructure-filter-item">
+                <label><input class="control-filter" type="radio" name="hotel-type" value="motel" >Мотель
+                </label>
+              </li>
+              <li class="infrastructure-filter-item">
+                <label><input class="control-filter" type="radio" name="hotel-type" value="appartments">Аппартаменты
+                </label>
+              </li>
+          </ul>
+          </fieldset>
+        <fieldset class="price">
+          <legend class="price-range">Стоимость,₽</legend>
+          <label for="price-range"></label>
+          <input type="number" placeholder="от" value="0">
+          <input type="number" placeholder="до" value="price-range.value">
+
+
+          <input type="range" id="price-range" name="price-range" min="0" max="9000" step="1">
+        </fieldset>
+
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="reset">Сбросить</button>
+        </form>
+      </section>
+    </main>
     <section class="newsletter-subs">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
