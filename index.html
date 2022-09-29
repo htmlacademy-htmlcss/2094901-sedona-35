@@ -9,8 +9,9 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="#"
-            alt="Логотип города Седона" /></a>
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="#" alt="Логотип города Седона" />
+          </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="#">Главная</a>
@@ -22,15 +23,20 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное 12</span></a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            <span>12</span>
+          </a>
           </li>
         </ul>
-        <a class="navigation-link button" href="#"><span class="visually-hidden">Хочу сюда</span></a>
+        <a class="navigation-link button" href="#">Хочу сюда</a>
       </nav>
     </header>
     <main class="main-index">
@@ -101,7 +107,7 @@
           </li>
         </ul>
       </section>
-      <section class="hotel search">
+      <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
@@ -119,24 +125,32 @@
             <label for="subscribe-form">Ваш e-mail.</label>
             <input type="email" id="subscribe-form" name="subscribe-form" placeholder="Ваш e-mail" />
           </p>
-          <button class="button">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
+          <a href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+          <a href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
         </li>
       </ul>
       <a class="phone-number" href="tel:88128121212">+7(812)8121212</a>
-      <a href="https://htmlacademy.ru"><img class="footer-html-academy-logo" src="#" alt="Логотип HTML-Academy" /></a>
+      <a href="https://htmlacademy.ru">
+        <img class="footer-html-academy-logo" src="#" alt="Логотип HTML-Academy" />
+      </a>
     </footer>
   </body>
 
