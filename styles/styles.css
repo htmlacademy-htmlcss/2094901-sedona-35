@@ -44,9 +44,10 @@
   background-color:#000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
-.background-divider{
-  background-size: 100% 57px;
+.background-title {
+  text-align: center;
 }
 .advantages-list {
   text-align: center;
@@ -61,10 +62,12 @@
 
 }
 
-
-
-
 .advantages-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 
 }
 
