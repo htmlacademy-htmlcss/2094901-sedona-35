@@ -6,6 +6,7 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "PT Sans";
   font-style: bold;
@@ -13,9 +14,60 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
  body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  background-color:#ffffff;
+  color:#000000 ;
+}
 
+/*Навигация*/
+.navigation-list{
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight:700;
+  line-height:24px;
+  text-align:center;
+  text-decoration:none;
+}
+.navigation-user-link{
+  text-decoration: none;
+}
+
+.main-title {
+  background-image: url(../images/background-index.jpg);
+  background-color:#000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.background-divider{
+  background-size: 100% 57px;
+}
+.advantages-list {
+  text-align: center;
+}
+
+.advantage-text {
+  font-size:30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+
+
+
+.advantages-title{
+
+}
+
+.visually-hidden{
+  visibility: hidden;
 }
