@@ -23,9 +23,31 @@
   color:#000000 ;
 }
 
-/*Навигация*/
-.navigation-list{
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
   text-decoration: none;
+  text-transform: uppercase;
+  padding:8px 50px;
+  border-radius: 4px;
+
+}
+
+/*Навигация*/
+.navigation-list {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navigation-user {
+  list-style-type: none;
+
+
 }
 
 .navigation-link {
@@ -35,25 +57,30 @@
   text-align:center;
   text-decoration:none;
 }
+
 .navigation-user-link{
   text-decoration: none;
 }
 
+/*Главная*/
 .main-title {
   background-image: url(../images/background-index.jpg);
   background-color:#000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+
 }
+
+.experiment {
+
+}
+
 .background-title {
   text-align: center;
 }
-.advantages-list {
-  text-align: center;
-}
 
-.advantage-text {
+.heading-font {
   font-size:30px;
   font-weight: 700;
   line-height: 36px;
@@ -61,6 +88,14 @@
   text-transform: uppercase;
 
 }
+
+/*Преимущества*/
+.advantages-list {
+  text-align: center;
+  list-style-type: none;
+}
+
+
 
 .advantages-title{
   font-size: 24px;
@@ -71,6 +106,67 @@
 
 }
 
-.visually-hidden{
+/*Услуги*/
+.services-list{
+  text-align: center;
+  list-style-type: none;
+}
+
+.services-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase
+
+}
+
+.hotel-search {
+
+  text-align: center;
+}
+
+.newsletter-main-subs {
+  background-image: url(../images/background-subscribe.jpg);
+  background-color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 96px 258px 184px;
+}
+
+.footer-social-item {
+  list-style-type: none;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.phone-number{
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Каталог*/
+
+.ifrastructure-filter{
+  border: 0 none;
+}
+
+.type-of-housing-filter{
+  border: 0 none;
+}
+
+.price{
+  border: 0 none;
+}
+
+.visually-hidden {
   visibility: hidden;
 }
