@@ -153,7 +153,7 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 96px 258px 184px;
+  /*padding: 96px 258px 184px;*/
   color: #ffffff;
 }
 
@@ -176,6 +176,13 @@
 }
 
 /*Каталог*/
+
+.filter-content{
+background-image: url(../images/background-catalog.jpg);
+background-color: #000000;
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
 
 .ifrastructure-filter{
   border: 0 none;
