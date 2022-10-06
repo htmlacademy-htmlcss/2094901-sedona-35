@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -34,7 +35,7 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#"><img src="images/heart.svg" width="20" height="20" alt="Избранное">
               <span class="visually-hidden">Избранное</span>
-            <span>12</span>
+            <span class="favourites-number">12</span>
           </a>
           </li>
         </ul>
@@ -56,7 +57,7 @@
       <section class="advantages">
       <h2 class="visually-hidden">Преимущества!</h2>
         <ul class="advantages-list">
-          <li class="advantages-item background-basic-3">
+          <li class="advantages-item background-blue">
             <h3 class="advantages-title ">Настоящий<br> городок</h3>
             <p class="advantages-description">
               Седона-не аттракцион для<br>туристов, там течет своя жизнь
@@ -65,19 +66,19 @@
           <li class="advantages-item">
             <img src="images/photo-1.jpg" width="800" height="384" alt="Домики на фоне гор" />
           </li>
-          <li class="advantages-item background-second-1">
+          <li class="advantages-item background-grey-soft">
             <h3 class="advantages-title">Небольшая<br> площадь</h3>
             <p class="advantages-description">
               Все достопримечательности<br> находятся очень близко
             </p>
           </li>
-          <li class="advantages-item background-second-2">
+          <li class="advantages-item background-grey-middle">
             <h3 class="advantages-title ">Красивая<br> дорога</h3>
             <p class="advantages-description">
               Ехать в Седону из Лас-вегаса<br> совсем не скучно!
             </p>
           </li>
-          <li class="advantages-item background-second-1">
+          <li class="advantages-item background-grey-soft">
             <h3 class="advantages-title">Мало<br> туристов</h3>
             <p class="advantages-description">
               Большинство едет в Гранд<br> Каньон и толпится там
@@ -86,7 +87,7 @@
           <li class="advantages-item">
             <img src="images/photo-2.jpg" width="800" height="384" alt="Каньон,горы,снова горы." />
           </li>
-          <li class="advantages-item background-basic-3">
+          <li class="advantages-item background-blue">
             <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
             <p class="advantages-description">
               Да,по нему можно пройти!<br> Если вы осмелитесь<br> разумеется
@@ -97,7 +98,7 @@
       <!--Услуги-->
       <section class="services">
         <ul class="services-list">
-          <li class="services-item background-second-1">
+          <li class="services-item background-grey-soft">
             <img src="images/advantage-home.svg" width="75" height="72" alt="Жилье" />
             <h3 class="services-title">Жилье</h3>
             <p class="services-description">
@@ -111,7 +112,7 @@
               Всегда заказывайте<br> топовый фирменный бургер?<br> вы не разочаруетесь!
             </p>
           </li>
-          <li class="services-item background-second-1">
+          <li class="services-item background-grey-soft">
             <img src="images/advantage-souvenir.svg" width="75" height="72" alt="Сувениры" />
             <h3 class="services-title">Сувениры</h3>
             <p class="services-description">
@@ -132,15 +133,14 @@
       <!--Подписка на рассылку-->
       <section class="newsletter-main-subs">
         <h2 class="heading-font">Подпишитесь на рассылку</h2>
-        <p>
-          Только полезная информация и никакого спама,<br> честное бойскаутское!
+        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-form-label">
             <label for="subscribe-form">Ваш e-mail.</label>
             <input type="email" id="subscribe-form" name="subscribe-form" placeholder="Ваш e-mail" />
           </p>
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
