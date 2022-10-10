@@ -2,7 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -25,20 +26,22 @@
             <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><img src="images/search.svg" width="20" height="20" alt="Поиск">
+        <ul class=" navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><img src="images/search.svg" width="20" height="20" alt="Поиск">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><img src="images/heart.svg" width="20" height="20" alt="Избранное">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><img src="images/heart.svg" width="20" height="20" alt="Избранное">
               <span class="visually-hidden">Избранное</span>
-            <span>12</span>
-          </a>
+            <span class="favourites-number">12</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="button" href="#">Хочу сюда</a>
           </li>
         </ul>
-        <a class="button" href="#">Хочу сюда</a>
       </nav>
     </header>
     <main class="main-inner">
@@ -53,7 +56,7 @@
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <img src="images/breadcrumbs-arrow.svg" width="8" height="19.94" alt="Стрелка">
+          <img src="images/breadcrumbs-arrow.svg" width="8px" height="20px" alt="Стрелка">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
@@ -206,19 +209,19 @@
             <a class="pagination-link pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link background-blue" href="#">2</a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link background-blue" href="#">3</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link background-blue" href="#">4</a>
+            <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link background-blue" href="#">...</a>
+            <a class="pagination-link pagination-more" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link background-blue" href="#">10</a>
+            <a class="pagination-link" href="#">10</a>
           </li>
 
         </ul>
@@ -233,11 +236,12 @@
           <label for="subscribe-form"></label>
           <input type="email" id="subscribe-form" name="subscribe-form" placeholder="Ваш e-mail" />
         </p>
-        <button class="button button-blue">Подписаться</button>
+        <button class="button button-blue button-big">Подписаться</button>
       </form>
     </section>
     <!--Социальные сети-->
     <footer class="main-footer">
+      <div class="footer-container">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -263,6 +267,7 @@
       <a href="https://htmlacademy.ru">
         <img class="footer-html-academy-logo" src="images/htmlacademy-logo.svg" width="114.9" height="32.9" alt="Логотип HTML-Academy" />
       </a>
+      </div>
     </footer>
   </body>
 
