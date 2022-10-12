@@ -514,6 +514,9 @@ padding: 0;
 }
 .button-sort {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
   width: 160px;
   gap: 8px;
   margin-left: 70px;
