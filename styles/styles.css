@@ -112,7 +112,6 @@ body {
   background-color: transparent;
   padding: 8px 50px;
 
-
 }
 
 .hotel-rating {
@@ -148,6 +147,7 @@ body {
 }
 
 .navigation {
+  display: flex;
   width: 1060px;
   margin: 0 auto;
   padding: 0;
@@ -177,6 +177,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -323,8 +324,6 @@ body {
 
 }
 
-.advantages-description {}
-
 /*Цвета*/
 
 .background-grey-soft {
@@ -376,9 +375,14 @@ body {
   text-transform: uppercase
 }
 
+.services-description {
+  padding: 0;
+  margin: 0;
+}
+
 .hotel-search {
   width: 1060px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
   margin-top: 96px;
 }
@@ -432,6 +436,18 @@ body {
 
 .social-link {
   text-decoration: none;
+}
+
+.link-vkontakte::after {
+  content: url(../images/social-vkontakte.svg);
+}
+
+.link-telegram::after {
+  content: url(../images/social-telegram.svg);
+}
+
+.link-youtube::after {
+  content: url(../images/social-youtube.svg);
 }
 
 .phone-number {
@@ -668,7 +684,7 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: 1px;
+  margin: -1px;
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
