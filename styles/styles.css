@@ -425,7 +425,9 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  width: 142px;
   padding: 0;
 }
 
@@ -450,17 +452,19 @@ body {
   content: url(../images/social-youtube.svg);
 }
 
+
+
 .phone-number {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  width: 331px;
   text-decoration: none;
   color: #000000;
+  margin: 0 auto;
 }
 
 /*Каталог*/
