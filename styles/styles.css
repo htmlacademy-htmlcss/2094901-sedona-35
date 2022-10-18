@@ -561,8 +561,9 @@ margin-bottom: 40px;
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .hotel-card {
@@ -692,8 +693,8 @@ border-radius: 4px;
   list-style-type: none;
   gap: 8px;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 60px;
+  margin: 0;
+  padding-bottom: 60px;
 
 }
 
