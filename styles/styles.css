@@ -198,7 +198,7 @@ body {
   position: absolute;
   content: url(../images/background-divider.svg);
   width: 1200px;
-  top: 400px;
+  bottom: -5px;
   left: 0;
 
 }
@@ -308,7 +308,6 @@ body {
   content: "";
     width: 60px;
     height: 2px;
-    top: 178px;
     bottom: 204px;
     left: 170px;
     right: 170px;
@@ -320,7 +319,6 @@ body {
   content: "";
     width: 60px;
     height: 2px;
-    top: 178px;
     bottom: 204px;
     left: 170px;
     right: 170px;
@@ -642,7 +640,7 @@ color: rgba(255, 255, 255, 0.3);
 .hotel-list:after {
   content: "";
     width: 1060px;
-    top: 936px;
+    bottom: 40px;
     position: absolute;
     border: 1px solid #E6E6E6;
 }
