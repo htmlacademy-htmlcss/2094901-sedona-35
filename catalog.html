@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <!--Навигация и главное меню-->
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -55,9 +55,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <!--Хлебные крошки-->
-      <div class="filter-content">
+      <div class="filter-content" data-test="filter">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
@@ -136,7 +136,7 @@
         </form>
       </div>
       <!--Каталог гостиниц-->
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="sorting-container">
           <h2 class="visually-hidden">Каталог гостиниц</h2>
           <p class="heading-font">Найдено гостиниц: 38</p>
@@ -279,7 +279,7 @@
       </section>
     </main>
     <!--Подписка на рассылку-->
-    <section class="newsletter-catalog-subs">
+    <section class="newsletter-catalog-subs" data-test="subscribe">
       <h2 class="heading-font heading-font-two">Подпишитесь на рассылку</h2>
       <p class="paragraph-font-two">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -291,7 +291,7 @@
       </form>
     </section>
     <!--Социальные сети-->
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="footer-container">
         <ul class="footer-social-list">
           <li class="footer-social-item">
