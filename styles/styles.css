@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-style: bold;
+  font-style: bold ;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
@@ -135,6 +135,7 @@ button.minus-button {
   cursor: pointer;
   top: 14px;
   left: 10px;
+  background-color: transparent;
 }
 
 .minus-button::after {
@@ -181,6 +182,7 @@ button.plus-button {
   cursor: pointer;
   top: 14px;
   right: 10px;
+  background-color: transparent;
 }
 
 .plus-button::before,
@@ -203,6 +205,8 @@ button.plus-button {
 
 .header-logo {
   display: block;
+  position: absolute;
+  bottom: 0;
 }
 
 .navigation-logo {
@@ -213,6 +217,7 @@ button.plus-button {
 
 .navigation {
   display: flex;
+  position: relative;
   width: 1060px;
   margin: 0 auto;
   align-items: center;
@@ -271,6 +276,7 @@ button.plus-button {
   background-color: #756157;
   background-repeat: no-repeat;
   text-align: center;
+  max-height: 485px;
 
 
 
@@ -318,10 +324,11 @@ button.plus-button {
 }
 
 .heading-font-three {
+  width: 438px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  text-align: center;
+  align-self: center;
   text-transform: uppercase;
   margin: 0;
 }
@@ -344,7 +351,7 @@ button.plus-button {
 }
 
 .favourites-number {
-  font-family: "PT Sans" sans-serif;
+  font-family:"PT Sans" sans-serif ;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -405,7 +412,7 @@ button.plus-button {
   content: "";
   width: 60px;
   height: 2px;
-  bottom: 204px;
+  bottom: 206px;
   left: 170px;
   right: 170px;
   position: absolute;
@@ -416,7 +423,7 @@ button.plus-button {
   content: "";
   width: 60px;
   height: 2px;
-  bottom: 204px;
+  bottom: 195px;
   left: 170px;
   right: 170px;
   position: absolute;
@@ -445,10 +452,16 @@ button.plus-button {
 
 .services-content {
   display: flex;
-  justify-content: center;
+  min-width: 230px;
   align-items: center;
   flex-direction: column;
   padding: 80px 85px 81px;
+}
+
+.services-icon {
+  width: 75px;
+  height: 72px;
+
 }
 
 /*Цвета*/
@@ -526,6 +539,7 @@ button.plus-button {
 }
 
 .subscribe-form-label {
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -539,9 +553,9 @@ button.plus-button {
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   border: none;
-  min-height: 28px;
+  min-height: 52px;
   font: inherit;
-
+  box-sizing: border-box;
 }
 
 .newsletter-catalog-subs {
@@ -553,7 +567,7 @@ button.plus-button {
   display: flex;
   width: 1060px;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 35px;
   justify-content: space-between;
 }
 
@@ -688,7 +702,7 @@ button.plus-button {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: 'PT Sans' sans-serif;
+  font-family:'PT Sans' sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -712,7 +726,7 @@ button.plus-button {
   margin: 0;
   margin-left: 157px;
   margin-bottom: 23px;
-  font-family: 'PT Sans' sans-serif;
+  font-family:'PT Sans' sans-serif ;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -739,7 +753,7 @@ button.plus-button {
 }
 
 .title-form {
-  font-family: 'PT Sans' sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -817,7 +831,6 @@ button.plus-button {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  rotate: 180deg;
 }
 
 .date-form-field {
@@ -858,6 +871,7 @@ button.plus-button {
 .date-icon {
   background-image: url(../images/date-icon.svg);
   background-repeat: no-repeat;
+  background-position: center;
   width: 20px;
   height: 20px;
   opacity: 0.3;
@@ -866,6 +880,7 @@ button.plus-button {
   top: 13px;
   right: 19px;
   cursor: pointer;
+
 }
 
 .guest-form-field {
@@ -878,6 +893,7 @@ button.plus-button {
   line-height: 20px;
   color: #000000;
   border-radius: 4px;
+  text-align: center;
 }
 
 input[type='number'] {
@@ -909,7 +925,7 @@ input::-webkit-inner-spin-button {
 }
 
 .search-form-button {
-  font-family: 'PT Sans' sans-serif;
+  font-family:'PT Sans' sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1010,16 +1026,23 @@ input::-webkit-inner-spin-button {
 .hotel-filter {
   display: flex;
   flex-direction: row;
+  width: 1060px;
+  justify-content: space-between;
+}
+
+.filter-wrapper {
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
 }
 
 /* Фильтр инфраструктуры */
 
-.ifrastructure-filter {
+.infrastructure-filter {
   border: 0 none;
   width: 151px;
   padding: 0;
   margin: 0;
-  margin-right: 70px;
 }
 
 .filter-list {
@@ -1029,18 +1052,20 @@ input::-webkit-inner-spin-button {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  min-height: 101px;
+  justify-content: space-between;
 
 }
 
 
-
+/*
 .filter-item {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   padding-bottom: 16px;
-}
+} */
 
 .filter-item:nth-child(3n) {
   padding-bottom: 0;
@@ -1072,9 +1097,9 @@ input::-webkit-inner-spin-button {
   outline: 3px solid #83B3D3;
 }
 
-.control:active .control-mark,
-.control:active .control-label {
-  border: 2px solid #83B3D3;
+.control-input:active + .control-mark,
+.control-input:active + .control-label {
+  outline: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   opacity: 0.3;
 }
@@ -1129,14 +1154,19 @@ input::-webkit-inner-spin-button {
   width: 151px;
   padding: 0;
   margin: 0;
-  margin-right: 140px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  width: 549px;
+    justify-content: space-between;
 }
 
 .catalog-filter-group {
   border: 0 none;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
+
 
 }
 
@@ -1149,6 +1179,7 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   position: relative;
 }
+
 .range-wrapper-inputs::before {
   content: "от";
   position: absolute;
@@ -1161,6 +1192,7 @@ input::-webkit-inner-spin-button {
   top: 12px;
   left: 106px;
 }
+
 .range-wrapper-inputs::after {
   content: "до";
   position: absolute;
@@ -1282,7 +1314,7 @@ input::-webkit-inner-spin-button {
   column-gap: 20px;
   justify-content: center;
   padding: 20px;
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
@@ -1296,7 +1328,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
   color: #000000;
   grid-column: 1/3;
-  font-family: 'PT Sans' sans-serif;
+  font-family:'PT Sans' sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1342,21 +1374,21 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   background-image: url(../images/star.svg);
   background-repeat: space;
-  padding: 10px 10px;
+  padding: 15px;
   margin: 0;
   align-self: center;
 }
 
 .hotel-star-2 {
-  width: 17px;
+  width: 12px;
 }
 
 .hotel-star-3 {
-  width: 35px;
+  width: 36px;
 }
 
 .hotel-star-4 {
-  width: 55px;
+  width: 59px;
 }
 
 /*Вложенный список*/
@@ -1369,8 +1401,9 @@ input::-webkit-inner-spin-button {
 .sorting-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 40px;
 
 }
@@ -1383,14 +1416,15 @@ input::-webkit-inner-spin-button {
 .select-control {
   width: 292px;
   padding: 14px 20px 14px 20px;
-  border: 2px solid #E5E5E5;
+  border: none;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
   box-sizing: border-box;
   font: inherit;
   background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 19px center;
 }
 
 .select-control:hover {
@@ -1410,14 +1444,26 @@ input::-webkit-inner-spin-button {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.toggle-wrapper {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .card-grid-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 16px;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   border-radius: 4px;
-  margin-right: 8px;
+
+}
+
+.toggle-icon {
+  width: 16px;
+  height: 14px;
 }
 
 .card-grid-toggle:nth-child(3n) {
@@ -1429,9 +1475,9 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   padding: 16px 16px;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   border-radius: 4px;
-  margin-right: 8px;
+
 }
 
 /*Пагинация*/
