@@ -207,6 +207,7 @@ button.plus-button {
   display: block;
   position: absolute;
   bottom: 0;
+  top: 0;
 }
 
 .navigation-logo {
@@ -508,18 +509,21 @@ button.plus-button {
 }
 
 .services-title {
+  word-break: break-word;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase
+  text-transform: uppercase;
+
 }
 
 .services-description {
   padding: 0;
   margin: 0;
+  word-break: break-word;
 }
 
 .hotel-search {
@@ -1203,7 +1207,7 @@ input::-webkit-inner-spin-button {
   line-height: 24px;
   color: #000000;
   top: 12px;
-  right: 12px;
+  right: 18px;
 
 }
 
@@ -1569,28 +1573,33 @@ input::-webkit-inner-spin-button {
 }
 
 /*navigation-button*/
+.more-button:hover,
 .search-button:hover,
 .navigation-button:hover {
   background-color: #615048;
 }
 
+.more-button:focus,
 .search-button:focus,
 .navigation-button:focus {
   background-color: #615048;
 }
 
+.more-button:active,
 .search-button:active,
 .navigation-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
+.more-button:disabled,
 .search-button:disabled,
 .navigation-button:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
 }
 
+.more-button:disabled:hover,
 .search-button:disabled:hover,
 .navigation-button:disabled:hover {
   background-color: #E5E5E5;
@@ -1668,68 +1677,43 @@ input::-webkit-inner-spin-button {
 }
 
 /*logo-vk*/
-.logo-vk {
+.social-logo {
   fill: #83B3D3;
-  ;
+
 }
 
-.logo-vk:hover {
+.link-vkontakte:hover .social-logo,
+.link-telegram:hover .social-logo,
+.link-youtube:hover .social-logo{
   fill: #68A2CA;
 }
 
-.logo-vk:focus {
+.link-vkontakte:focus .social-logo,
+.link-telegram:focus .social-logo,
+.link-youtube:focus .social-logo {
   fill: #68A2CA;
 }
 
-.logo-vk:active {
+
+.link-vkontakte:active .social-logo,
+.link-telegram:active .social-logo,
+.link-youtube:active .social-logo{
   fill: rgba(104, 162, 202, 0.3);
 }
 
-/*logo-tg*/
-.logo-tg {
-  fill: #83B3D3;
-  ;
-}
-
-.logo-tg:hover {
-  fill: #68A2CA;
-}
-
-.logo-tg:focus {
-  fill: #68A2CA;
-}
-
-.logo-tg:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
-/*logo-yt*/
-.logo-yt {
-  fill: #83B3D3;
-  ;
-}
-
-.logo-yt:hover {
-  fill: #68A2CA;
-}
-
-.logo-yt:focus {
-  fill: #68A2CA;
-}
-
-.logo-yt:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
 
 /*phone-number*/
+.logo-htmlacademy:hover,
 .phone-number:hover {
   color: #756157;
 }
 
+.logo-htmlacademy:focus,
 .phone-number:focus {
   color: #756157;
 }
 
+.logo-htmlacademy:active,
 .phone-number:active {
   color: rgba(117, 97, 87, 0.3);
 }
@@ -1739,17 +1723,6 @@ input::-webkit-inner-spin-button {
   fill: #000000;
 }
 
-.logo-htmlacademy:hover {
-  fill: #756157;
-}
-
-.logo-htmlacademy:focus {
-  fill: #756157
-}
-
-.logo-htmlacademy:active {
-  fill: rgba(117, 97, 87, 0.3);
-}
 
 /*card-grid-toggle*/
 .card-grid-toggle:hover {
@@ -1763,33 +1736,6 @@ input::-webkit-inner-spin-button {
 .card-grid-toggle:active {
   outline: 2px solid #000000;
 }
-
-/*more-button*/
-.more-button:hover {
-  background-color: #615048;
-}
-
-.more-button:focus {
-  background-color: #615048;
-}
-
-.more-button:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.more-button:disabled {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
-}
-
-.more-button:disabled:hover {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
-  outline: none;
-  cursor: default;
-}
-
 
 /*active-button*/
 .active-button:hover {
